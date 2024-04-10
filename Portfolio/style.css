@@ -1,0 +1,285 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+header a:hover {
+    color: #0779e4;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#portfolio .portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#My{
+
+    color: #fff; 
+
+}
+
+.portfolio-item {
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.portfolio-item img {
+    width: 10%;
+    height: 10%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
+.home-card {
+    background-color: #fff; /* Card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the card */
+}
+
+.home-photo {
+    width: 190px; /* Adjust based on your preference */
+    height: 190px; /* Adjust to maintain aspect ratio */
+    border-radius: 90%; /* Circular photo */
+    object-fit: cover; /* Ensure the photo covers the area */
+    margin-bottom: 20px; /* Space between photo and text */
+    background-image: url("C:\Users\jantonym\OneDrive - Arizona State University\Desktop\Portfolio\Portfolio\images\bbb.gif");
+}
+
+.card-content h1, .card-content p {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-card {
+        width: 90%;
+    }
+}
+
+body {
+    background-image: url("C:\Users\jantonym\OneDrive - Arizona State University\Desktop\Portfolio\Portfolio\images\background.jpg");/* Adjusted path as needed */ background-size: cover; /* Covered the entire page */
+    background-position: center; /* Centered the background image */
+    background-attachment: fixed; /* created a parallax-like effect */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* For equal spacing */
+    gap: 20px; /* This adds space between the rows and columns */
+}
+
+.portfolio-item {
+    flex: 1 1 calc(50% - 20px); /* Adjusted so two items fit in a row, accounting for the gap */
+    margin-bottom: 20px; /* Space between rows */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for depth */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Rounded the corners of the card */
+    display: flex;
+    flex-direction: column; /* Ensured content is organized vertically */
+    align-items: center; /* Center-aligned the item content */
+}
+
+.portfolio-item img {
+    width: 40%; /* Responsive image width */
+    height: 40%; /* Maintained aspect ratio */
+    border-radius: 10px; /* matches the card's border-radius */
+    margin-bottom: 15px; /* Space between the image and the text content */
+}
+
+/* Ensured images don't stretch beyond their container's width */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex-basis: 100%; /* Allows each item to take the full width of its container */
+        /* Reset any specific margins or padding here if needed */
+    }
+}
+
+#contact {
+    background-color: #ffffff; /* Adjusted if your card has a different color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 800px; /* Adjusted based on your layout */
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact:hover {
+    transform: scale(1.03); /* Slightly enlarged the card on hover */
+}
+
+.container {
+    width: 100%; /* Ensured the container fits the card */
+    padding: 20px; /* Adjusted the padding as needed */
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Bootstrap primary color, adjust as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.about-photo {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: url('your-photo.jpg') center/cover no-repeat;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo-effect-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.about-photo:hover .photo-effect-layer {
+    opacity: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+    color:#007bff;
+}
+
+.about-text p {
+    text-align: justify;
+    line-height: 1.6;
+    color:#f9f9f9;
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+    }
+    .about-photo,
+    .about-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
