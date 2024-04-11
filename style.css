@@ -87,13 +87,24 @@ footer {
     margin: 0 auto; /* Center the card */
 }
 
+.home-text h2 {
+    margin-bottom: 15px;
+    color:#007bff;
+}
+
+.home-text p {
+    text-align: justify;
+    line-height: 1.6;
+    color:#f9f9f9;
+}
+
 .home-photo {
     width: 190px; /* Adjust based on your preference */
     height: 190px; /* Adjust to maintain aspect ratio */
     border-radius: 90%; /* Circular photo */
     object-fit: cover; /* Ensure the photo covers the area */
     margin-bottom: 20px; /* Space between photo and text */
-    background-image: url("C:\Users\jantonym\OneDrive - Arizona State University\Desktop\Portfolio\Portfolio\images\bbb.gif");
+    /* background-image: url("./images/bbb.gif"); */
 }
 
 .card-content h1, .card-content p {
@@ -108,7 +119,9 @@ footer {
 }
 
 body {
-    background-image: url("C:\Users\jantonym\OneDrive - Arizona State University\Desktop\Portfolio\Portfolio\images\background.jpg");/* Adjusted path as needed */ background-size: cover; /* Covered the entire page */
+    /* background-image = url() */
+    /* Adjusted path as needed */
+    background-size: cover; /* Covered the entire page */
     background-position: center; /* Centered the background image */
     background-attachment: fixed; /* created a parallax-like effect */
     margin: 0;
